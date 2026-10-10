@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Services | Geitech Contractors</title>
-    <link rel="shortcut icon" href="assets/img/logo.svg" type="image/x-icon" />
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css" />
     <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
@@ -12,7 +12,7 @@
     <header class="header bg-header" id="header">
       <nav class="nav container">
         <a href="index.html" class="nav__logo">
-          <i class="ri-building-3-line"></i>
+          <img src="assets/img/favicon.png" alt="Geitech Contractors logo" />
           <span>GEITECH CONTRACTORS LTD</span>
         </a>
 
@@ -23,8 +23,20 @@
             <li><a href="index.html" class="nav__link">Home</a></li>
             <li><a href="about.html" class="nav__link">About</a></li>
             <li><a href="services.html" class="nav__link active-link">Services</a></li>
-            <li><a href="projects.html" class="nav__link">Projects</a></li>
-            <li><a href="roadworks.html" class="nav__link">Roadworks</a></li>
+            <li class="nav__item--dropdown">
+              <button class="nav__dropdown-toggle" type="button" aria-expanded="false">
+                Projects
+                <i class="ri-arrow-down-s-line"></i>
+              </button>
+              <div class="nav__dropdown">
+                <a href="projects.html" class="nav__dropdown-link">Overview</a>
+                <a href="roadworks.html" class="nav__dropdown-link">Roadworks</a>
+                <a href="houses.html" class="nav__dropdown-link">Houses</a>
+                <a href="commercial-buildings.html" class="nav__dropdown-link">Commercial Buildings</a>
+                <a href="renovation.html" class="nav__dropdown-link">Renovation</a>
+                <a href="pricing.html" class="nav__dropdown-link">Pricing</a>
+              </div>
+            </li>
             <li><a href="contact.html" class="nav__link button">Contact</a></li>
           </ul>
           <div class="nav__close" id="nav-close"><i class="ri-close-large-line"></i></div>
@@ -83,7 +95,7 @@
     <footer class="footer">
       <div class="footer__container container grid">
         <div>
-          <a href="index.html" class="footer__logo"><i class="ri-building-3-line"></i><span>Geitech Contractors</span></a>
+          <a href="index.html" class="footer__logo"><img src="assets/img/favicon.png" alt="Geitech Contractors logo" /><span>Geitech Contractors</span></a>
           <p class="footer__description">Quality work that keeps communities moving.</p>
           <address class="footer__email">Email : info@geitechcontractors.co.ke</address>
         </div>

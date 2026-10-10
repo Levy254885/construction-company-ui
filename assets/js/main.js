@@ -29,6 +29,37 @@ const linkAction = () => {
 };
 navLink.forEach((n) => n.addEventListener("click", linkAction));
 
+const dropdownToggles = document.querySelectorAll(".nav__dropdown-toggle");
+const closeDropdowns = () => {
+  document.querySelectorAll(".nav__item--dropdown").forEach((item) => {
+    item.classList.remove("dropdown-open");
+    const toggle = item.querySelector(".nav__dropdown-toggle");
+    if (toggle) toggle.setAttribute("aria-expanded", "false");
+  });
+};
+
+dropdownToggles.forEach((toggle) => {
+  toggle.addEventListener("click", (event) => {
+    event.stopPropagation();
+    const item = toggle.closest(".nav__item--dropdown");
+    if (!item) return;
+
+    const isOpen = item.classList.contains("dropdown-open");
+    closeDropdowns();
+
+    if (!isOpen && window.innerWidth < 1150) {
+      item.classList.add("dropdown-open");
+      toggle.setAttribute("aria-expanded", "true");
+    }
+  });
+});
+
+document.addEventListener("click", (event) => {
+  if (!event.target.closest(".nav__item--dropdown")) {
+    closeDropdowns();
+  }
+});
+
 /*=============== CHANGE BACKGROUND HEADER ===============*/
 const bgHeader = () => {
   const header = document.getElementById("header");
