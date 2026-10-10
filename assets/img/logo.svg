@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 120" role="img" aria-label="GEITECH Contractors Ltd logo">
+  <defs>
+    <linearGradient id="g" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#f97316"/>
+    </linearGradient>
+  </defs>
+  <rect width="240" height="120" rx="18" fill="#0f172a"/>
+  <g transform="translate(18 16)">
+    <path d="M18 66 L45 18 L72 66 Z" fill="url(#g)"/>
+    <path d="M54 66 L81 18 L108 66 Z" fill="#ffffff" opacity="0.9"/>
+    <path d="M90 66 L117 18 L144 66 Z" fill="url(#g)"/>
+    <rect x="18" y="72" width="126" height="10" rx="5" fill="#f8fafc" opacity="0.9"/>
+  </g>
+  <text x="170" y="46" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" fill="#f8fafc">GEITECH</text>
+  <text x="170" y="71" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="600" letter-spacing="1.5" fill="#f59e0b">CONTRACTORS</text>
+</svg>
