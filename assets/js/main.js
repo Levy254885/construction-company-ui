@@ -82,7 +82,7 @@ const projectData = {
     category: "Multi-Storey Structure",
     title: "Storey Building Floor Works",
     location: "Location: Multi-storey construction site",
-    image: "",
+    image: "assets/img/projects-img-3.png",
     details: [
       "<strong>Why floor works matter:</strong> A well-constructed floor provides structural integrity, a safe working surface, and the stability needed for the rest of the building to perform as designed.",
       "<strong>Our success story:</strong> GEITECH focused on precise concrete preparation, level checking, finishing control, and quality assurance to create a smooth, strong base for the building's ongoing work.",
