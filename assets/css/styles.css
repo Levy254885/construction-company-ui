@@ -1548,3 +1548,45 @@ img {
     right: 3rem;
   }
 }
+
+/*=============== PROJECTS PAGE CARDS WITH PHOTOS ===============*/
+.info-card--media {
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.info-card__img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  object-position: center 55%;
+  display: block;
+}
+
+.info-card__body {
+  padding: 1.5rem;
+}
+
+.info-card__tag {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  font-size: 0.8rem;
+  font-weight: var(--font-semi-bold);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--first-color);
+}
+
+@media screen and (min-width: 768px) {
+  .page-grid:has(.info-card--media) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  .page-grid:has(.info-card--media) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
